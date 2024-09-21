@@ -4,7 +4,7 @@ OpenGL_CMAKE_SKELETON from https://github.com/ArthurSonzogni/OpenGL_CMake_Skelet
 
 Running the application locally:
 ```
-cmake -DCMAKE_TOOLCHAIN_FILE="C:\Users\suhas\AppData\Local\emsdk\upstream\emscripten\cmake\Modules\Platform\Emscripten.cmake" -DCMAKE_BUILD_TYPE=Release -G "MinGW Makefiles" . -B build -DCMAKE_PREFIX_PATH=.
+cmake -DCMAKE_TOOLCHAIN_FILE="$env:LOCALAPPDATA\emsdk\upstream\emscripten\cmake\Modules\Platform\Emscripten.cmake" -DCMAKE_BUILD_TYPE=Release -G "MinGW Makefiles" . -B build -DCMAKE_PREFIX_PATH=.
 cmake --build build
 cd build
 python -m http.server 8000 --directory build
